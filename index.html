@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Speedy Claims</title>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <h1>SpeedyClaims</h1>
+        <div class="topDiv">
+            <button type="button" id="newClaimBtn" onclick="newClmFrmDisplay()">NEW CLAIM</button>
+            <span></span>
+            <button type="button">OPEN CLAIMS</button>
+            <span></span>
+            <button type="button" id="searchClaimBtn" onclick="srchClmFrmDisplay()">SEARCH</button>
+            <span></span>
+            <button type="button">ARCHIVE</button>
+        </div>
+        <form id="newClm">
+            <div class="mainHeader"><h1> Register new claim</h1></div>
+            
+            <div class="container">
+                
+                <ul>
+                    <li>
+                        <label for="policyNum">Policy Number *</label>
+                        <input id="policyNum" type="text" placeholder="Policy Number" required="true">
+                    </li>
+                    <li>
+                        <label for="title" required="false">Title</label>
+                        <select id="title">
+                            <option value="" selected=""></option>
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="ms">Ms</option>
+                            <option value="miss">Miss</option>
+                            <option value="dr">Dr</option>
+                        </select>                            
+                    </li>
+                    <li>
+                        <label for="firstName">First Name *</label>
+                        <input id="firstName" type="text" placeholder="first name" required="true">
+                    </li>
+                    <li>
+                        <label for="surName">Surname *</label>
+                        <input id="surName" type="text" placeholder="surname" required="true">
+                    </li>
+                    <li>
+                        <label for="email">Email *</label>
+                        <input id="email" type="text" placeholder="email" required="true">
+                    </li>
+                    <li>
+                        <label for="phoneNo">Phone Number *</label>
+                        <input id="phoneNo" type="text" placeholder="phone number" required="true">
+                    </li>
+                    <button type="button" class="regButton">REGISTER</button>
+                </ul>
+            </div>
+        </form>
+        <form id="searchClm">
+            <div class="searchHeader"><h1>Search Claim</h1></div>
+            
+            <div class="container">
+                
+                <ul>
+                    <li>
+                        <label class="labcon">Enter a policy number or part of the customer's surname</label>                        
+                    </li>
+                    <li><p></p></li>                    
+                    <li>
+                        <label for="polNum">Policy Number *</label>
+                        <input id="polNum" type="text" placeholder="policy number" required="true">
+                    </li>
+                    <li>
+                        <label for="surNam">Surname *</label>
+                        <input id="surNam" type="text" placeholder="surname" required="true">
+                    </li>
+                    <button type="button" class="searchButton">SEARCH</button>
+                </ul>
+            </div>
+        </form>
+    </body>
+</html>
